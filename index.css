@@ -10,12 +10,13 @@
 
 .textview {
     background-color: transparent;
-    width: 100%;
+    width: 95%;
     text-align: right;
     border: none;
     height: 350px;
     font-size: 60px;
     font-weight: bolder;
+    margin: 0 auto;
 }
 
 .button {
