@@ -1,0 +1,52 @@
+.main {
+    background-color: white;
+    height: 1600px;
+    width: 900px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    box-shadow: .4vw .4vw .6vw #d0d0d0, -.4vw -.4vw .6vw #f6f6f6;
+}
+
+.textview {
+    background-color: transparent;
+    width: 100%;
+    text-align: right;
+    border: none;
+    height: 350px;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.button {
+    height: 175px;
+    background-color: white;
+    box-shadow: .4vw .4vw .6vw #d0d0d0, -.4vw -.4vw .6vw #f6f6f6;
+    width: 175px;
+    font-weight: bolder;
+    font-size: 50px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+#second {
+    height: 15vh !important;
+    border-radius: 50px !important;
+    background-color: rgb(127, 194, 114);
+}
+
+#clean {
+    background-color: rgb(194, 65, 65);
+}
+
+.button:hover {
+    box-shadow: inset .4vw .4vw .6vw #d0d0d0, inset -.4vw -.4vw .6vw #f6f6f6;
+}
+
+table {
+    margin: 0 auto;
+}
