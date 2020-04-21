@@ -26,7 +26,7 @@ function equal() {
 
     if (exp) {
         try { a.value = eval(exp); } catch (e) {
-            alert("Syntax Error!");
+            console.log("Syntax Error!");
             document.form.textview.value = 'Syntax Error!';
             none();
         }
@@ -37,13 +37,13 @@ function equal() {
     if (a.value == 'Infinity') {
         document.form.textview.value = "Can't divide by Zero!";
 
-        alert('Can\'t divide by Zero!')
+        console.log('Can\'t divide by Zero!')
         none();
     }
 }
 
 function none() {
-    alert('Press the Clear button!');
+    console.log('Press the Clear button!');
 }
 
 function clean() {
