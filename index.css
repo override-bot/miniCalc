@@ -1,61 +1,87 @@
-body {
-    background-image: url(IMG_6166.jpg);
-    background-size: 100% 100%;
-}
-
-.main {
-    background-color: white;
-    height: 1600px;
-    width: 900px;
-    margin: 0 auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 50px;
-    box-shadow: .4vw .4vw .6vw #d0d0d0, -.4vw -.4vw .6vw #f6f6f6;
-    border-radius: 15px;
-    box-shadow: inset .4vw .4vw .6vw #d0d0d0, inset -.4vw -.4vw .6vw #f6f6f6;
-}
-
-.textview {
-    background-color: transparent;
-    width: 800px;
-    border: none;
-    height: 350px;
-    font-size: 60px;
-    font-weight: bolder;
-    margin: 0 auto;
-    text-align: right;
-    position: relative;
-}
-
-.button {
-    height: 175px;
-    background-color: white;
-    box-shadow: .4vw .4vw .6vw #d0d0d0, -.4vw -.4vw .6vw #f6f6f6;
-    width: 175px;
-    font-weight: bolder;
-    font-size: 50px;
-    border-radius: 50%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-}
-
-#second {
-    height: 15vh !important;
-    border-radius: 50px !important;
-    background-color: rgb(127, 194, 114);
-}
-
-#clean {
-    background-color: rgb(194, 65, 65);
-}
-
-.button:hover {
-    box-shadow: inset .4vw .4vw .6vw #d0d0d0, inset -.4vw -.4vw .6vw #f6f6f6;
-}
-
-table {
-    margin: 0 auto;
-}
+            body {
+                background-color: rgb(245, 243, 243);
+            }
+            
+            .main {
+                background-color: white;
+                height: 1600px;
+                width: 900px;
+                margin: 0 auto;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-top: 10px;
+                box-shadow: .4vw .4vw .6vw #d0d0d0, -.4vw -.4vw .6vw #f6f6f6;
+                border-radius: 15px;
+                box-shadow: inset .4vw .4vw .6vw #d0d0d0, inset -.4vw -.4vw .6vw #f6f6f6;
+            }
+            
+            .textview {
+                background-color: transparent;
+                width: 800px;
+                border: none;
+                height: 250px;
+                font-size: 60px;
+                font-weight: bolder;
+                margin: 0 auto;
+                text-align: right;
+                position: relative;
+            }
+            
+            .button {
+                height: 175px;
+                background-color: white;
+                box-shadow: .4vw .4vw .6vw #d0d0d0, -.4vw -.4vw .6vw #f6f6f6;
+                width: 175px;
+                font-weight: bolder;
+                font-size: 50px;
+                border-radius: 50%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 15px;
+            }
+            
+            #second {
+                height: 15vh !important;
+                border-radius: 50px !important;
+                background-color: rgb(127, 194, 114);
+            }
+            
+            #clean {
+                background-color: rgb(194, 65, 65);
+            }
+            
+            .button:hover {
+                box-shadow: inset .4vw .4vw .6vw #d0d0d0, inset -.4vw -.4vw .6vw #f6f6f6;
+            }
+            
+            table {
+                margin: 0 auto;
+            }
+            
+            @media screen and (min-width: 768px) {
+                h1 {
+                    display: none;
+                }
+                .main {
+                    height: 87vh;
+                    width: 40%;
+                    margin: 0 auto;
+                }
+                .textview {
+                    height: 10vh;
+                    font-weight: 400;
+                    font-size: 30px;
+                    width: 90%;
+                }
+                .button {
+                    height: 7vh;
+                    width: 4vw;
+                    margin-right: 20px;
+                    font-weight: 400;
+                    font-size: x-large;
+                }
+                #second {
+                    height: 10vh !important;
+                }
+            }

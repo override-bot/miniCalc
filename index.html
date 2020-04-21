@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h1 style="text-align: center; color:rgb(112, 112, 172)">Zilla Calc 1.0</h2>
+    <h1 style="text-align: center; color:rgb(112, 112, 172)">Zilla Calc 1.1</h2>
         <div class="main">
             <form name="form">
                 <input class="textview" name="textview" placeholder="0" disabled>
@@ -23,19 +23,42 @@
                         </div>
                     </td>
                     <td>
-                        <div class="button none" onclick="opt('(')">
-                            <div class="inner">(</div>
+                        <div class="button none" onclick="power2()">
+                            <div class="inner">x<sup>2</sup></div>
                         </div>
                     </td>
                     <td>
-                        <div class="button none" onclick="opt(')')">
-                            <div class="inner">)</div>
+                        <div class="button none" onclick="power3()">
+                            <div class="inner">x<sup>3</sup></div>
                         </div>
                     </td>
 
                     <td>
                         <div class="button none" onclick="opt('*')">
                             <div class="inner">×</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="button" onclick="sin()">
+                            <div class="inner">sin</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button none" onclick="tan()">
+                            <div class="inner">tan</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button none" onclick="cos()">
+                            <div class="inner">cos</div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="button none" onclick="log()">
+                            <div class="inner">log</div>
                         </div>
                     </td>
                 </tr>

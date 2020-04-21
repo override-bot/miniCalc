@@ -29,7 +29,9 @@ function equal() {
             console.log("Syntax Error!");
             document.form.textview.value = 'Syntax Error!';
             none();
+
         }
+
     }
     if (a.value == 0) {
         a.value = "";
@@ -40,6 +42,7 @@ function equal() {
         console.log('Can\'t divide by Zero!')
         none();
     }
+
 }
 
 function none() {
@@ -53,4 +56,28 @@ function clean() {
 function back() {
     var exp = document.form.textview.value;
     document.form.textview.value = exp.substring(0, exp.length - 1);
+}
+
+function power2() {
+    document.form.textview.value = Math.pow(document.form.textview.value, 2);
+}
+
+function power3() {
+    document.form.textview.value = Math.pow(document.form.textview.value, 3);
+}
+
+function sin() {
+    document.form.textview.value = Math.sin(document.form.textview.value * Math.PI / 180).toFixed(1);
+}
+
+function tan() {
+    document.form.textview.value = Math.tan(document.form.textview.value * Math.PI / 180).toFixed(1);
+}
+
+function cos() {
+    document.form.textview.value = Math.cos(document.form.textview.value * Math.PI / 180).toFixed(1);
+}
+
+function log() {
+    document.form.textview.value = Math.log(document.form.textview.value).toFixed(3);
 }
