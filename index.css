@@ -10,9 +10,9 @@ body {
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 50px;
-    box-shadow: .4vw .4vw .6vw #d0d0d0, -.4vw -.4vw .6vw #f6f6f6;
+    box-shadow: .4vw .4vw .6vw #d0d0d0, -.4vw -.4vw .6vw #d0d0d0;
     border-radius: 15px;
-    box-shadow: inset .4vw .4vw .6vw #d0d0d0, inset -.4vw -.4vw .6vw #f6f6f6;
+    box-shadow: inset .4vw .4vw .6vw #d0d0d0, inset -.4vw -.4vw .6vw #d0d0d0;
 }
 
 .textview {
