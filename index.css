@@ -4,7 +4,7 @@
             
             .main {
                 background-color: white;
-                height: 1650px;
+                height: 1620px;
                 width: 900px;
                 margin: 0 auto;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,7 +18,7 @@
                 background-color: transparent;
                 width: 800px;
                 border: none;
-                height: 250px;
+                height: 220px;
                 font-size: 60px;
                 font-weight: bolder;
                 margin: 0 auto;
