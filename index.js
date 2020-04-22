@@ -1,7 +1,9 @@
+var calcFinished;
+
 function insert(num) {
 
     var a = document.form.textview;
-
+    clearOld();
     a.value += num;
 }
 
@@ -23,7 +25,7 @@ function equal() {
     var button = document.getElementsByClassName('none');
     var a = document.form.textview;
     var exp = a.value;
-
+    calcFinished = true;
     if (exp) {
         try { a.value = eval(exp); } catch (e) {
             console.log("Syntax Error!");
@@ -45,6 +47,13 @@ function equal() {
 
 }
 
+function clearOld() {
+    if (calcFinished) {
+        document.form.textview.value = '';
+        calcFinished = false;
+    }
+}
+
 function none() {
     console.log('Press the Clear button!');
 }
@@ -60,24 +69,41 @@ function back() {
 
 function power2() {
     document.form.textview.value = Math.pow(document.form.textview.value, 2);
+    calcFinished = true;
 }
 
 function power3() {
     document.form.textview.value = Math.pow(document.form.textview.value, 3);
+    calcFinished = true;
 }
 
 function sin() {
     document.form.textview.value = Math.sin(document.form.textview.value * Math.PI / 180).toFixed(1);
+    calcFinished = true;
 }
 
 function tan() {
     document.form.textview.value = Math.tan(document.form.textview.value * Math.PI / 180).toFixed(1);
+    calcFinished = true;
 }
 
 function cos() {
     document.form.textview.value = Math.cos(document.form.textview.value * Math.PI / 180).toFixed(1);
+    calcFinished = true;
 }
 
 function log() {
     document.form.textview.value = Math.log(document.form.textview.value).toFixed(3);
+    calcFinished = true;
 }
+navigator.getBattery().then(function(battery) {
+    var level = battery.level;
+
+    console.log(level);
+    var percentage = (level * 100).toFixed(0);
+    document.querySelector('.percent').innerHTML = percentage + "%";
+    if (percentage < 20) {
+        alert("Battery level is low");
+
+    }
+})
