@@ -9,6 +9,7 @@ function insert(num) {
 
 function opt(amd) {
     var view = document.form.textview;
+    calcFinished = false;
     if (view.value != "") {
         view.value += amd;
     }
