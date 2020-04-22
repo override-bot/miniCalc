@@ -100,7 +100,7 @@ function log() {
 navigator.getBattery().then(function(battery) {
     var level = battery.level;
 
-    console.log(level);
+
     var percentage = (level * 100).toFixed(0);
     document.querySelector('.percent').innerHTML = percentage + "%";
     if (percentage < 20) {
